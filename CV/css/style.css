@@ -1,0 +1,411 @@
+/*BODY*/
+body{
+  font-family: 'Lato', sans-serif;
+}
+/*h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}*/
+/*img{
+  max-width: 100%;
+  height: auto;
+}*/
+section{
+  padding: 45px 0 80px 0;
+}
+section .heading{
+  text-align: center;
+  padding-bottom: 40px;
+}
+section .heading h2{
+  text-transform: uppercase;
+}
+
+.blue-divider{
+  width: 100px;
+  height: 2px;
+  background: #1A3861;
+  margin: 0 auto;
+}
+.white-divider{
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto;
+}
+ul,ol{
+  list-style: none;
+}
+
+/*BANNER*/
+.container-fluid{
+  position: relative;
+  /*width: 100%;*/
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
+@media only screen and (max-width: 599px) {
+  container-fluid {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -300px;
+  }
+}
+/*.banner_img{
+  position: relative;
+  height: 100vh;;
+  width: 100%;
+  background-size: cover;
+}*/
+
+.banner_content{
+  /*position: absolute;*/
+  text-align: center;
+  color: white;
+}
+
+.banner_name{
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  /*// margin-top: 20%;*/
+}
+  .banner_name h1{
+  /*// font-family:  ;
+  // font-weight: 750;*/
+  letter-spacing: 2px;
+  font-size: 61px;
+  }
+  .banner_name h2{
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+  }
+
+  .button1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 17px;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .button1:hover{
+    background: white;
+    color: #1A3861;
+    text-decoration: none;
+
+  }
+
+/*.container-fluid .glyphicon{
+  position: absolute;
+  font-size: 25px;
+  bottom: 10px;
+  left: 48%;
+  color: #fff;
+  height: 30px;
+}
+.container-fluid .glyphicon:hover{
+  font-size: 30px;
+}*/
+
+
+/*MENU*/
+
+.navbar{
+  background: #1A3861;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar .navbar-nav{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse{
+  text-align: center;
+}
+
+.navbar li a{
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a{
+  color: #1A3861 !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle{
+  border-style: none;
+}
+.icon-bar{
+  background-color: #fff !important;
+}
+/*ABOUT*/
+
+
+.img-square{
+  width: 70%;
+  height: auto;
+  margin-right: 15rem;
+  margin-left: 12rem;
+  margin-top: 10rem;
+  border-radius: 2px;
+  filter: drop-shadow(2px 2px 3px #040418);
+
+}
+
+#about{
+  width: 100%;
+}
+
+
+#about h1 {
+  font-family: 'Raleway',sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  background-color: #1A3861;
+  padding: 2px 35px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  display:inline-block;
+  margin-top: 10rem;
+}
+
+#about h2{
+    display: inline-block;
+    text-align: center;
+}
+#about p{
+  font-size: 16px;
+}
+
+#about p a{
+  color: #1A3861;
+  font-weight: bolder;
+}
+
+/*@media only screen and (max-width: 726px) and (min-width: 415px) {
+#about p {
+font-size: 1,6em;
+
+}*/
+
+/*SKILLS*/
+#skills{
+  background: #fff;
+  /*margin-top: 10rem*/;
+}
+
+#skills .heading h2{
+  color: #1A3861;
+}
+
+#skills .progress{
+  height: 100%;
+  margin: 30px 20px;
+  background: #ddd;
+}
+
+#skills .progress-bar{
+  background: #1A3861;
+}
+#skills .progress h5{
+  text-shadow: 1px 1px 1px #000;
+}
+
+/*EXPERIENCE*/
+
+#experience{
+  background: #1A3861;
+
+}
+#experience .heading h2{
+  color: #fff;
+}
+
+.timeline{
+  padding: 30px 10px;
+  position: relative;
+}
+.timeline:before{
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 5px;
+  background-color: #333;
+  left: 50%;
+  margin-left: -2.5px;
+}
+.timeline > li{
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline > li:after{
+  clear: both;
+}
+.timeline > li:before, .timeline > li:after{
+  content: " ";
+  display: table;
+}
+
+.timeline li .timeline-badge{
+  color: #1A3861;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+.timeline-panel-container{
+  width: 50%;
+  float: left;
+}
+.timeline-panel-container-inverted{
+  width: 50%;
+  float: right;
+}
+.timeline-panel{
+  background: #fff;
+  width: 90%;
+  float: right;
+  margin-right: 40px;
+  border: 1px solid #1A325C;
+  border-radius: 7px;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
+
+}
+
+.timeline-panel-container-inverted .timeline-panel{
+  float: left;
+  margin-left: 40px;
+}
+
+.timeline-panel:after{
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline-panel-container-inverted .timeline-panel:after{
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline-heading h3{
+  margin-top: 5px;
+  font-size: 20px;
+}
+.timeline-heading h4{
+  color: #1A3861;
+}
+
+
+/*HOBBY*/
+#hobby{
+  background: #1A3861;
+
+}
+
+#hobby .heading h2{
+  color: #fff;
+}
+
+.hobby-content{
+ /* text-align: center;*/
+}
+
+.hobby-content ul li{
+  display: inline-block;
+  float: left;
+  padding: 0;
+  margin: 0 auto ;
+  color: #fff;
+
+}
+.hobby-content ul{
+  /*display: block;*/
+  text-align: center;
+  /*margin: auto;*/
+}
+
+
+
+.hobby-content .glyphicon{
+  font-size: 40px;
+  margin: 1px;
+  color: #fff;
+  height: 30px;
+}
+
+/*FOOTER*/
+footer{
+  background: #333;
+  height: 151px;
+  padding: 3px 0 30px;
+}
+footer .glyphicon{
+  font-size: 25px;
+  margin: 1px;
+  color: #fff;
+  height: 30px;
+}
+footer .glyphicon:hover{
+  font-size: 30px;
+}
+footer h3{
+  color: #fff;
+  font-weight: normal;
+
+}
+
+footer p{
+  color: #fff;
+  font-weight: normal;
+}
+
+
+
+@media only screen and (max-width: 992px)/* and (min-width: 415px) */{
+.hobby-content {
+
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (max-width: 770px)/* and (min-width: 415px) */{
+.hobby-content {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+
+  /*margin: auto 10px;*/
+
+}
+@media only screen and (max-width: 770px)/* and (min-width: 415px) */{
+.hobby-content ul li{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
